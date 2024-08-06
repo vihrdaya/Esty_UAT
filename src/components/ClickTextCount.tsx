@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-function ClickTextCount({ myCount }: { myCount: number }) {
+interface ClickTextCountProps {
+  myCount: number;
+}
+
+const ClickTextCount: React.FC<ClickTextCountProps> = ({ myCount }) => {
   const [count, setCount] = useState(0);
 
   return (
@@ -10,6 +14,6 @@ function ClickTextCount({ myCount }: { myCount: number }) {
       </button>
     </div>
   );
-}
+};
 
 export default ClickTextCount;

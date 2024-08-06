@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ClickTextCount from "./ClickTextCount";
 
-function TextCountBox() {
+const TextCountBox: React.FC = () => {
   const [text, setText] = useState("");
   const [count, setCount] = useState(0);
 
@@ -21,6 +21,6 @@ function TextCountBox() {
       <ClickTextCount myCount={count} />
     </div>
   );
-}
+};
 
 export default TextCountBox;
