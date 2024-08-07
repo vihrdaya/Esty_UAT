@@ -5,6 +5,7 @@ import TextCountBox from "../components/TextCountBox";
 const Home: React.FC = () => {
   return (
     <>
+      <h1>Home Page</h1>
       <Message />
 
       <TextCountBox />

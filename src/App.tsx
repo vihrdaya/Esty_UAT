@@ -4,6 +4,7 @@ import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import List from "./pages/List";
 const App: React.FC = () => {
   return (
     <div>
@@ -17,6 +18,9 @@ const App: React.FC = () => {
               <li>
                 <Link to="/about">About</Link>
               </li>
+              <li>
+                <Link to="/list">List</Link>
+              </li>
             </ul>
           </nav>
         </header>
@@ -24,10 +28,11 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/list" element={<List />} />
           </Routes>
         </main>
         <footer>
-          <p>&copy; 2024 My Website</p>
+          <p>&copy; 2024 Balls</p>
         </footer>
       </div>
     </div>
